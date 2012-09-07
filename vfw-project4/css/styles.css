@@ -1,0 +1,122 @@
+/*	Rueben Anderson
+		10/18/2011
+		VFW 1110
+		Project 4 (To-do List App)
+*/
+
+	/* Create a background gradient from white to blue to white 
+		3 prefixed values: mozilla, opera, webkit all others will get standard background color */
+.gradient {
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #214874 30%, #214874 75%, #FFFFFF 100%);
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #214874 30%, #214874 75%, #FFFFFF 100%);
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #214874 30%, #214874 75%, #FFFFFF 100%);
+}
+
+	/* Sets the font page defaults */
+html {
+	margin: 5px;
+	font-family: "Hoefler Text", "Times New Roman", Times, san-serif;
+	font-size: 16px;
+}
+
+	/* Adds padding to the top and bottom of the header group */
+hgroup {
+	padding: 2px 0px;
+}
+
+h1 {
+	text-align: center;
+	color: #FFA269;
+}
+
+body {
+	color: #CC9B73;
+	background-color: #214874;
+}
+
+	/* Create a double border on the left and right sides of the form only 
+		and gives a dark blue background color */
+form {
+	font-size: 14px;
+	border-style: none double;
+	border-color: #FFFFFF;
+	border-radius: 15px;
+	background-color: #102440;
+}
+
+fieldset {
+	border: none;
+	background-color: #102440;
+	padding: 10px 15px;
+}
+
+	/* Create a blue colored drop-down box w/ white text in FireFox */
+optgroup {
+	color: #FFFFFF;
+	background-color: #316CBF;
+}
+
+	/* Add some padding around the legend element to reduce cramping */
+legend {
+	font-size: 18px;
+	font-weight: bold;
+	letter-spacing: .12em;
+	padding-top: 5px;
+}
+
+	/* Creates a background and border style similar to the form field's for consistency */
+div {
+	padding: 3px 5px;
+	border-style: none double;
+	border-radius: 10px;
+	border-color: #FFFFFF;
+	background-color: #113864;
+}
+
+	/* Adds a little space between ul & li elements */
+ul, li {
+	list-style-type: none;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+ul ul#routineDays {
+	width: 300px;
+	padding-left: 0px;
+	padding-top: 7px;
+}
+
+ul ul#routineDays li {
+	padding-left: 10px;
+}
+	
+	/* Change the font-family for difference with header tags */
+p {
+	font-family: Cochin, Courier, Didot, Arial, san-serif;
+	font-size: 16px
+}
+	/* Put the nav elements on the right side */
+nav {
+	text-align: right;
+	padding-right: 10px;
+}
+
+a {
+	color: #316CBF;
+}
+
+a:hover {
+	color: #FFFFFF;
+}
+
+span {
+	font-size: 16px;
+	
+}
+
+img {
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 5px;
+	border-color: #FFA269;
+}

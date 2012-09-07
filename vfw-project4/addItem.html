@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--	Rueben Anderson
+		10/18/2011
+		VFW 1110
+		Project 4 (To-do List App)
+-->
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="description" content="HTML5 Exercise App!"/>
+		<meta name="keywords" content="html5, exercise, app, vfw"/>
+		<meta name="robots" content="noindex, nofollow"/>
+		<meta name="viewport" content="user-scalable=no, width=device-width"/>
+		<title>My Exercise Routine</title>	
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body class="gradient">
+		<header>
+			<hgroup>
+				<h1>Exercise List</h1>		
+			</hgroup>
+		</header>
+		<nav>
+			<a id="clearLists" href="#">Clear Stored Data</a>
+			<a id="showData" href="#">Display Data</a>
+			<a id="addNew" href="addItem.html" style="display:none;">Add New Routine</a>
+		</nav>
+		<form id="routineForm" action="#" method="post">				<!-- Form starts here -->
+			<fieldset>
+				<legend>Add A Routine</legend>
+				<ul>
+					<ul id="errors"></ul>
+						
+					<li>		<!-- Allows the user to input a name for the routine -->
+						<label for="routineName"><span>Name this routine:</span></label><br>
+						<input type="text" id="routineName" placeholder="Dumbbells"/>
+					</li>
+					<li id="select">
+						<label for="exercise"><span>Select a type of exercise:</span><br></label>
+					</li>
+						<!-- The user will select which days for this routine -->
+					<li>
+						<ul id="routineDays"><span>Select the day(s) for this exercise:</span>
+							<li><input type="Checkbox" value="Sunday" id="sunday" /><label for="sunday">SUN</label></li>
+							<li><input type="Checkbox" value="Monday" id="monday" /><label for="monday">MON</label></li>
+							<li><input type="Checkbox" value="Tuesday" id="tuesday" /><label for="tuesday">TUE</label></li>
+							<li><input type="Checkbox" value="Wednesday" id="wednesday" /><label for="wednesday">WED</label></li>
+							<li><input type="Checkbox" value="Thursday" id="thursday" /><label for="thursday">THU</label></li>
+							<li><input type="Checkbox" value="Friday" id="friday" /><label for="friday">FRI</label></li>
+							<li><input type="Checkbox" value="Saturday" id="saturday" /><label for="saturday">SAT</label></li>
+						</ul>
+					</li>
+							<!-- The user will input a value in the range from 1 to 100 -->
+					<li>
+						<label for="workout">
+							<span>How many Reps for Physical Training or <br>
+							The minute duration for Cardio Training:</span>
+						</label>
+						<br>	<!-- The value of the slider will dynamically be updated within the #rangeVal span tag -->
+						<span>0 </span><input type="range" min="1" max="100" id="workout" value="15"/><span id="rangeVal"> 15</span>
+					</li>
+						<!-- This field asks the user for additional details for the routine -->
+					<li>
+						<label for="comments"><span>Type exercise notes here:</span></label><br>
+						<textarea id="comments" placeholder="example: 45lb weights or quarter mile dirt track"></textarea>
+					</li>
+						<!-- The user will enter a starting date for the routine -->
+					<li>
+						<label for="startDate"><span>Choose a start date:</span></label><br>
+						<input type="date" id="startDate" placeholder="YYYY-MM-DD"/>
+					</li>
+				</ul>
+			</fieldset>
+			<input type="submit" id="submit" value="Add Exercise" />
+			<br>
+		</form>													<!-- End of form -->
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>
